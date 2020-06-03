@@ -1,6 +1,6 @@
 /**
 * This file is part of DSO.
-* 
+*
 * Copyright 2016 Technical University of Munich and Intel.
 * Developed by Jakob Engel <engelj at in dot tum dot de>,
 * for more information see <http://vision.in.tum.de/dso>.
@@ -387,7 +387,7 @@ ImageAndExposure* Undistort::undistort(const MinimalImage<T>* image_raw, float e
 {
 	if(image_raw->w != wOrg || image_raw->h != hOrg)
 	{
-		printf("Undistort::undistort: wrong image size (%d %d instead of %d %d) \n", image_raw->w, image_raw->h, w, h);
+		printf("Undistort::undistort: wrong image size (%d %d instead of %d %d) \n", image_raw->w, image_raw->h, wOrg, hOrg);
 		exit(1);
 	}
 
@@ -720,7 +720,7 @@ void Undistort::readFromFile(const char* configFileName, int nPars, std::string 
 	passthrough=false;
 	remapX = 0;
 	remapY = 0;
-	
+
 	float outputCalibration[5];
 
 	parsOrg = VecX(nPars);
