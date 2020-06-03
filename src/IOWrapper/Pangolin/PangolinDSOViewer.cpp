@@ -1,6 +1,6 @@
 /**
 * This file is part of DSO.
-* 
+*
 * Copyright 2016 Technical University of Munich and Intel.
 * Developed by Jakob Engel <engelj at in dot tum dot de>,
 * for more information see <http://vision.in.tum.de/dso>.
@@ -90,7 +90,7 @@ void PangolinDSOViewer::run()
 
 	// 3D visualization
 	pangolin::OpenGlRenderState Visualization3D_camera(
-		pangolin::ProjectionMatrix(w,h,400,400,w/2,h/2,0.1,1000),
+		pangolin::ProjectionMatrix(w,h,400,400,w/2,h/2,0.1,2500),
 		pangolin::ModelViewLookAt(-0,-5,-10, 0,0,0, pangolin::AxisNegY)
 		);
 
